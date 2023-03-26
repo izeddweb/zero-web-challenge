@@ -4,7 +4,7 @@
 // let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 
 
-// let solution = myString.split(',').filter(function(ele){
+// let solution = myString.split(',').slice(0,length-true).filter(function(ele){
 
 //   return !ele !== isNaN(Number(ele))
   
@@ -22,18 +22,50 @@
 
 // console.log(solution);// Elzero Web School
 
+//                 set variable
 
-let  strings = " ABB,zzzedd,lufffffy,oneee,pieceeee";
-// let strictString = strings.split('').reduce(function(acc='',curVal,indexVal) {
-//   if( acc === curVal){
+//        Set variable
 
-//   }
-//   console.log(indexVal);
-// })
-// console.log(strictString);
+const boxs = document.querySelectorAll('.box')
 
-strings.split('').forEach(element => {
-  console.log(element.indexOf('A'));
-  return element === element?element ='':element;
-});
-console.log(strings);
+const observer = new IntersectionObserver( (entries)=> {
+  entries.forEach((entrie) => {
+    if (entrie.isIntersecting){
+      entrie.target.classList.add('show','slide')
+    }
+    
+    console.log( entrie.isIntersecting);
+  })
+},options ={
+  threshold:.2 ,
+})
+
+
+boxs.forEach((box)=> {
+  observer.observe(box)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
