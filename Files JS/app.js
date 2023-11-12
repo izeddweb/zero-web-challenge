@@ -204,7 +204,6 @@
 //   console.log("False");
 // }
 
-
 // let day = "Friday";
 // let day = "Saturday";
 // let day = "Sunday";
@@ -247,7 +246,7 @@
 //       console.log("Its Not A Valid Day");
 // }
 
-//   challenge ok 
+//   challenge ok
 
 //                        Condition Met Challenge
 //                        Challenge 01
@@ -275,7 +274,6 @@
 // let job = "Developer";
 // let salary = 0;
 
-
 // // changing in switch statment ok
 
 // switch ( job) {
@@ -296,13 +294,10 @@
 //   salary
 // } `);
 
-
 // changing in if statment ok
 
 // let holidays = 2;
 // let money = 0;
-
-
 
 // if( holidays == 0){
 //   money = 5000;
@@ -322,7 +317,6 @@
 // challenge ok
 
 // challenge  Array
-
 
 // let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
 // let num = 3;
@@ -346,7 +340,6 @@
 // // Write One Single Line Of Code
 // finalArr= arrOne.concat(arrTwo)
 // console.log(finalArr.sort().reverse()); // ["Z", "X", "D", "C", "B", "A"]
-
 
 // let website = "Go";
 // let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
@@ -377,21 +370,88 @@
 // console.log(allArrs);
 // console.log(allArrs.join("").toLowerCase()); // fxy
 
-let zero = 0;
-let counter = 3;
-let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
+// let zero = 0;
+// let counter = 3;
+// let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
 
-"????"
-let solution1 = my.slice(zero,++counter).reverse()
-console.log();
-// ["Osama", "Elham", "Mazero", "Ahmed"];
-console.log(solution1); 
-let solution2 = my.slice(zero,counter).reverse().slice(true,--counter)
-console.log(solution2); 
-// ["Elham", "Mazero"]
+// "????"
+// let solution1 = my.slice(zero,++counter).reverse()
+// console.log();
+// // ["Osama", "Elham", "Mazero", "Ahmed"];
+// console.log(solution1);
+// let solution2 = my.slice(zero,counter).reverse().slice(true,--counter)
+// console.log(solution2);
+// // ["Elham", "Mazero"]
+
+// console.log(solution2.slice(zero,true)); // "Elzero"
+// let count =0;
+// function countTrue(arr) {
+// 	arr.filter( function(ele ) {
+// 		ele === true?count++ :count;
+
+// 	})
+//   return  console.log(`[${arr} => ${count}]`);
+// 	;
+// }
+
+// countTrue([true, false, true, false])
+
+// let myName;
+// let myAge;
+// let myStats;
+
+// function showDetails(...info) {
+//   for (const item of info) {
+//     if (typeof item === "string") {
+//       myName = item;
+//     } else if (typeof item === "boolean") {
+//       myStats = item;
+//       if (item === true) {
+//         myStats = " Available";
+//       } else {
+//         myStats = "not Available";
+//       }
+//     } else {
+//       myAge = item;
+//     }
+//   }
+//   return ` Hello I'm ${myName},My Age is: ${myAge} Old, I'm ${myStats} or Working. `;
+// }
+// console.log(showDetails(38, "zedd", true));
+// console.log(showDetails(false, "Ab", 22));
+
+// let names = (...info) => ` String [${info} ] => Done !`;
+
+// console.log(names("ab","zedd","aymen","bilel"));
+// //   output = String [ab], [zedd], [aymen], [bilel] => Done !
 
 
-console.log([solution2.slice(zero,true)].); // "Elzero"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
